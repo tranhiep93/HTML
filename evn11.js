@@ -299,8 +299,7 @@ const khoiTao = async () => {
                 </tr>
                 <tr>
                     <td colspan="3" style="text-align: left; padding-left: 5px; font-size: 18px;">
-                        <span style="">⚠️Thông báo: </span>Từ ngày 1/7, <strong>Có thể cấp, đổi thẻ BHYT tự nguyện tại điểm văn hóa xã.</strong>
-			Thẻ được nối tiếp ngay đảm bảo <strong>quyền lợi khám chữa bệnh bằng BHYT</strong>.</span>
+                        <span style="">⚠️Thông báo: </span>Từ ngày 1/7, <strong>Có thể cấp, đổi thẻ BHYT tự nguyện tại điểm văn hóa xã.</strong> Thẻ được nối tiếp ngay đảm bảo <strong>quyền lợi khám chữa bệnh bằng BHYT</strong>.</span>
                     </td>
 
                 </tr>
