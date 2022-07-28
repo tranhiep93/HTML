@@ -261,7 +261,7 @@ const khoiTao = async () => {
 
     <section class="signature-evn row">
         <div class="col-12">
-            <table style="width: 100%;">
+            <table style="width: 110%;">
                 <colgroup>
                     <col width="30%">
                     <col width="30%">
