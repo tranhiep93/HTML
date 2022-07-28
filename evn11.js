@@ -168,10 +168,9 @@ const khoiTao = async () => {
             </div>
             <div style="text-align: center;padding-top: 2px;font-size: 10px;">
                 (từ <span id="start_date">20/04/2019</span> đến <span id="end_date">20/04/2019</span>)<br>
- 
         </div>
         <div class="col-2">
-            <div class="logo" style="margin: 5px;float: right;">
+            <div class="logo" style="margin: 4px;float: right;">
                 <img id="provider_logo" src="/resources/assets/images/logo_vietnam_post.png" width="50px" height="50px">
             </div>
         </div>
