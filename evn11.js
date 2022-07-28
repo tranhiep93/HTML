@@ -162,8 +162,8 @@ const khoiTao = async () => {
         </div>
         <div class="col-8" style="padding-top: 5px;font-size: 17px;">
             <div style="text-align: center">
-	    <b>BƯU ĐIỆN HUYỆN MÊ LINH</b>
-	    <i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i>
+	    <b>BƯU ĐIỆN HUYỆN MÊ LINH</b><br/>
+	    <i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i><br/>
                 <b>ĐẠI DIỆN ĐIỂM VHX TỰ LẬP: HỒ THỊ THẮM</b>
             </div>
             <div style="text-align: center;padding-top: 2px;font-size: 10px;">
