@@ -162,13 +162,15 @@ const khoiTao = async () => {
         </div>
         <div class="col-8" style="padding-top: 5px;font-size: 17px;">
             <div style="text-align: center">
-                <b>TRAN XUAN HIEP: THU TIỀN ĐIỆN TRỰC TIẾP BĐ XÃ TỰ LẬP</b>
+	    <b>BƯU ĐIỆN HUYỆN MÊ LINH</b>
+	    <i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i>
+                <b>ĐẠI DIỆN ĐIỂM VHX TỰ LẬP: HỒ THỊ THẮM</b>
             </div>
             <div style="text-align: center;padding-top: 2px;font-size: 10px;">
                 (từ <span id="start_date">20/04/2019</span> đến <span id="end_date">20/04/2019</span>)<br>
             </div>
 			<div style="text-align: center;padding-top: 5px;font-size: 15px;">
-                💥Chị <strong>Hồ Thị Thắm</strong> làm ở Bưu điện xã Tự Lập <em>(thay anh Lập đã nghỉ)</em>.
+               
             </div>
         </div>
         <div class="col-2">
