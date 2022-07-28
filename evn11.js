@@ -160,7 +160,7 @@ const khoiTao = async () => {
                 <img src="/resources/assets/images/logo_vietnam_post.png" width="70px" height="70px">
             </div>
         </div>
-        <div class="col-8" style="padding-top: 5px;font-size: 17px;">
+        <div class="col-9" style="padding-top: 5px;font-size: 16px;">
             <div style="text-align: center">
 	    <b>BƯU ĐIỆN HUYỆN MÊ LINH</b><br/>
 	    <i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i><br/>
@@ -168,10 +168,7 @@ const khoiTao = async () => {
             </div>
             <div style="text-align: center;padding-top: 2px;font-size: 10px;">
                 (từ <span id="start_date">20/04/2019</span> đến <span id="end_date">20/04/2019</span>)<br>
-            </div>
-			<div style="text-align: center;padding-top: 5px;font-size: 15px;">
-               
-            </div>
+ 
         </div>
         <div class="col-2">
             <div class="logo" style="margin: 5px;float: right;">
@@ -302,7 +299,8 @@ const khoiTao = async () => {
                 </tr>
                 <tr>
                     <td colspan="3" style="text-align: left; padding-left: 5px; font-size: 18px;">
-                        <span style="">⚠️Thông báo: </span>Từ ngày 1/7, <strong>cấp, đổi thẻ BHYT tự đóng ở xã Tự Lập</strong> hết hạn được thu trực tiếp tại Bưu điện xã Tự Lập gặp chị <strong>Hồ Thị Thắm sđt:0978 333 963</strong>. Thẻ được nối tiếp ngay đảm bảo <strong>quyền lợi khám chữa bệnh BHYT</strong>.</span>
+                        <span style="">⚠️Thông báo: </span>Từ ngày 1/7, <strong>Có thể cấp, đổi thẻ BHYT tự nguyện tại điểm văn hóa xã.</strong>
+			Thẻ được nối tiếp ngay đảm bảo <strong>quyền lợi khám chữa bệnh bằng BHYT</strong>.</span>
                     </td>
 
                 </tr>
