@@ -32,7 +32,7 @@ const khoiTao = async () => {
         </div>
         <div class="col-8" style="padding-top: 5px;font-size: 17px;">
             <div style="text-align: center">
-                <b>HỒ THỊ THẮM: THU TIỀN ĐIỆN TRỰC TIẾP BĐ XÃ TỰ LẬP</b>
+                <b>TRAN XUAN HIEP: THU TIỀN ĐIỆN TRỰC TIẾP BĐ XÃ TỰ LẬP</b>
             </div>
             <div style="text-align: center;padding-top: 2px;font-size: 10px;">
                 (từ <span id="start_date">20/04/2019</span> đến <span id="end_date">20/04/2019</span>)<br>
