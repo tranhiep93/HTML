@@ -172,7 +172,7 @@ const khoiTao = async () => {
         </div>
         <div class="col-2">
             <div class="logo" style="margin: 5px;float: right;">
-                <img id="provider_logo" src="/resources/assets/images/logo_vietnam_post.png" width="70px" height="70px">
+                <img id="provider_logo" src="/resources/assets/images/logo_vietnam_post.png" width="50px" height="50px">
             </div>
         </div>
     </section>
