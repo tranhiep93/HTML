@@ -85,6 +85,7 @@ const doCopy = async () => {
   //if(evn.ten) await searchBHYT(evn.ten)
 }
 */
+/*
 function drawPrintEVN(trans) {
         let providerMap = JSON.parse('{"CNBENTRE":{"logo":"https:\/\/static.paysmart.com.vn\/billing\/15.%20Bien_nhan_Cap_Nuoc_Ben_Tre.jpg","name":"Nước Bến Tre","type":"WACO","phone":"","district_id":"","iconUrl":"https:\/\/static.paysmart.com.vn\/billing\/icon-water\/Water_Ben_Tre@3x.png","default":"true","province_id":"83","active":"true","service_code":"water","provider_code":"CNBENTRE"},"CNTHOTNOT":{"logo":"https:\/\/dev-stc.paysmart.com.vn\/billing\/12.%20Bien_nhan_Cap_Nuoc_Can_Tho_2.jpg","name":"Nước Thốt Nốt","type":"WACO","phone":"","district_id":"","iconUrl":"https:\/\/dev-stc.paysmart.com.vn\/billing\/icon-water\/Water_ThotNot_CT@3x.png","default":"false","province_id":"92","active":"true","service_code":"water","provider_code":"CNTHOTNOT"},"CNCT":{"logo":"https:\/\/static.paysmart.com.vn\/billing\/11.%20Bien_Nhan_Cap_Nuoc_Can_Tho.png","name":"Nước Cần Thơ","type":"WACO","phone":"","district_id":"","iconUrl":"https:\/\/static.paysmart.com.vn\/billing\/icon-water\/Water_Can_Tho@3x.png","default":"true","province_id":"92","active":"true","service_code":"water","provider_code":"CNCT"},"CNCAIRANG":{"logo":"https:\/\/dev-stc.paysmart.com.vn\/billing\/12.%20Bien_nhan_Cap_Nuoc_Can_Tho_2.jpg","name":"Nước Cái Răng","type":"WACO","phone":"","district_id":"","iconUrl":"https:\/\/dev-stc.paysmart.com.vn\/billing\/icon-water\/Water_Cai_Rang_CT@3x.png","default":"false","province_id":"92","active":"true","service_code":"water","provider_code":"CNCAIRANG"},"CNTRANOC":{"logo":"https:\/\/dev-stc.paysmart.com.vn\/billing\/21.%20Bien_nhan_Cap_Nuoc_Tra_Noc_O_Mon.jpg","name":"Nước Trà Nóc - Ô Môn","type":"WACO","phone":"","district_id":"","iconUrl":"https:\/\/dev-stc.paysmart.com.vn\/billing\/icon-water\/Water_Tra_Noc%403x.png","default":"false","province_id":"92","active":"true","service_code":"water","provider_code":"CNTRANOC"},"EVNS":{"logo":"https:\/\/static.paysmart.com.vn\/icon\/EVNSPC.png","name":"EVN Miền Nam","type":"EVN","phone":"","default":"true","district_id":"","province_id":"60","service_code":"electric","provider_code":"EVNS"},"EVNHN":{"logo":"https:\/\/dev-stc.paysmart.com.vn\/billing\/dien-evnhn.jpg","name":"EVN Hà Nội","type":"EVN","phone":"","district_id":"","iconUrl":"https:\/\/dev-stc.paysmart.com.vn\/icon\/EVNHN.png","default":"true","province_id":"01","active":"true","service_code":"electric","provider_code":"EVNHN"},"CNCANTHO2":{"logo":"https:\/\/static.paysmart.com.vn\/billing\/12.%20Bien_nhan_Cap_Nuoc_Can_Tho_2.jpg","name":"Nước Cần Thơ 2","type":"WACO","phone":"","district_id":"","iconUrl":"https:\/\/static.paysmart.com.vn\/billing\/icon-water\/Water_Can_Tho2@3x.png","default":"false","province_id":"92","active":"true","service_code":"water","provider_code":"CNCANTHO2"}}');
 
@@ -147,7 +148,7 @@ function drawPrintEVN(trans) {
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
-
+*/
 const khoiTao = async () => {
     await sleep(1000);
     
