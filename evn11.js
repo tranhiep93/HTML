@@ -160,7 +160,7 @@ const khoiTao = async () => {
                 <img src="/resources/assets/images/logo_vietnam_post.png" width="70px" height="70px">
             </div>
         </div>
-        <div class="col-9" style="padding-top: 5px;font-size: 16px;">
+        <div class="col-8" style="padding-top: 5px;font-size: 16px;">
             <div style="text-align: center">
 	    <b>BƯU ĐIỆN HUYỆN MÊ LINH</b><br/>
 	    <i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i><br/>
