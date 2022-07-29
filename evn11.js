@@ -158,12 +158,14 @@ const khoiTao = async () => {
         </div>
         <div class="col-8" style="padding-top: 5px;font-size: 17px;">
             <div style="text-align: center">
-	    <b>BƯU ĐIỆN HUYỆN MÊ LINH</b><br/>
-	    <i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i><br/><b>ĐẠI DIỆN ĐIỂM VHX TỰ LẬP: HỒ THỊ THẮM</b>
+                <b>BƯU ĐIỆN HUYỆN MÊ LINH</b><br/><i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i><br/><b>ĐẠI DIỆN ĐIỂM VHX TỰ LẬP: HỒ THỊ THẮM</b>
             </div>
-        <div style="text-align: center;padding-top: 2px;font-size: 10px;">
+            <div style="text-align: center;padding-top: 2px;font-size: 10px;">
                 (từ <span id="start_date">20/04/2019</span> đến <span id="end_date">20/04/2019</span>)<br>
             </div>
+			<div style="text-align: center;padding-top: 5px;font-size: 15px;">
+            </div>
+        </div>
         <div class="col-2">
             <div class="logo" style="margin: 5px;float: right;">
                 <img id="provider_logo" src="/resources/assets/images/logo_vietnam_post.png" width="70px" height="70px">
