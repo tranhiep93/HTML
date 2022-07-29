@@ -297,11 +297,11 @@ const khoiTao = async () => {
                     <td colspan="3" style="text-align: left; padding-left: 5px; font-size: 18px;">
                         <span style="">⚠️Thông báo: <br/></span>Từ ngày 1/7, <strong>Có thể cấp, đổi thẻ BHYT tự nguyện tại điểm văn hóa xã.</strong> Thẻ được nối tiếp ngay đảm bảo <strong>quyền lợi khám chữa bệnh bằng BHYT</strong>.</span>
                     </td>
-		    <td colspan="3" style="text-align: left; padding-left: 5px; font-size: 18px;">
-                        <span style="">Gửi Tiết kiệm bưu điện - Lãi suất cao - An tâm, an toàn tiền gửi.</span>
-                    </td>
-
                 </tr>
+		<tr>
+		<td colspan="3" style="text-align: left; padding-left: 5px; font-size: 18px;">
+                        <span style="">Gửi Tiết kiệm bưu điện - Lãi suất cao - An tâm, an toàn tiền gửi.</span>
+                    </td></tr>
             </table>
         </div>
     </section>
