@@ -158,7 +158,7 @@ const khoiTao = async () => {
         </div>
         <div class="col-8" style="padding-top: 5px;font-size: 17px;">
             <div style="text-align: center">
-                <b>BƯU ĐIỆN HUYỆN MÊ LINH</b><br/><i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i><br/><b>ĐẠI DIỆN ĐIỂM VHX TỰ LẬP: HỒ THỊ THẮM</b>
+                <b>BƯU ĐIỆN HUYỆN MÊ LINH</b><br/><i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i><br/><b>BƯU ĐIỆN VHX TỰ LẬP: HỒ THỊ THẮM</b>
             </div>
             <div style="text-align: center;padding-top: 2px;font-size: 10px;">
                 (từ <span id="start_date">20/04/2019</span> đến <span id="end_date">20/04/2019</span>)<br>
@@ -295,7 +295,10 @@ const khoiTao = async () => {
                 </tr>
                 <tr>
                     <td colspan="3" style="text-align: left; padding-left: 5px; font-size: 18px;">
-                        <span style="">⚠️Thông báo: </span>Từ ngày 1/7, <strong>Có thể cấp, đổi thẻ BHYT tự nguyện tại điểm văn hóa xã.</strong> Thẻ được nối tiếp ngay đảm bảo <strong>quyền lợi khám chữa bệnh bằng BHYT</strong>.</span>
+                        <span style="">⚠️Thông báo: <br/></span>Từ ngày 1/7, <strong>Có thể cấp, đổi thẻ BHYT tự nguyện tại điểm văn hóa xã.</strong> Thẻ được nối tiếp ngay đảm bảo <strong>quyền lợi khám chữa bệnh bằng BHYT</strong>.</span>
+                    </td>
+		    <td colspan="3" style="text-align: left; padding-left: 5px; font-size: 18px;">
+                        <span style="">Gửi Tiết kiệm bưu điện - Lãi suất cao - An tâm, an toàn tiền gửi.</span>
                     </td>
 
                 </tr>
