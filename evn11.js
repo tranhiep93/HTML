@@ -132,23 +132,19 @@ function drawPrintEVN(trans) {
                     _base.find("#" + k).empty().text(_data[k]);
                 }
             });
-
             if (k > 0) {
                 _container.append($("<div style='page-break-before: always;'></div>"));
             }
             _container.append(_base.clone());
         }
-
         _container.print({
             globalStyles: false,
             stylesheet: "https://app.buudienxatulap.ga/printv2.css"
         });
     }
-
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
-
 const khoiTao = async () => {
     await sleep(1000);
     
@@ -164,10 +160,10 @@ const khoiTao = async () => {
             <div style="text-align: center">
 	    <b>BƯU ĐIỆN HUYỆN MÊ LINH</b><br/>
 	    <i>Trụ sở chính: Khu hành chính Huyện Mê Linh-Đại Thịnh-Mê Linh-Hà Nội</i><br/>
-                <b>ĐẠI DIỆN ĐIỂM VHX TỰ LẬP: HỒ THỊ THẮM</b>
+            <b>ĐẠI DIỆN ĐIỂM VHX TỰ LẬP: HỒ THỊ THẮM</b>
             </div>
             <div style="text-align: center;padding-top: 2px;font-size: 10px;">
-                (từ <span id="start_date">20/04/2019</span> đến <span id="end_date">20/04/2019</span>)<br>
+                (từ <span id="start_date">20/04/2019</span> đến <span id="end_date">20/04/2019</span>)
         </div>
         <div class="col-2">
             <div class="logo" style="margin: 4px;float: right;">
