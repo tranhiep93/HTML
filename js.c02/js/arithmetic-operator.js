@@ -1,6 +1,6 @@
 var subtotal = (13+1)*5;
 
-var shippinng = 0.5 * (13+1);
+var shippinng = 1 * (13+1);
 
 var total = subtotal + shippinng;
 
