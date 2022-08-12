@@ -1,25 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>JavaScript &amp; jQuery - Chapter 6: Events - Click</title>
-    <link rel="stylesheet" href="css/c06.css" />
-  </head>
-  <body>
-    <div id="page">
-      <h1>List King</h1>
-      <h2>New Account</h2>
-      <form method="post" action="http://www.example.org/register">
+var msg = '<a class=\"header\"><a id=\"close\" href="#"<close X</a></div>';
+msg += '<div><h2>System Maintenance</h2>';
+msg += 'Our servers are being updated between 3 and 4 a.m.';
+msg += 'During this time, there may be minor disruptions to service. </div>';
 
-        <label for="username">Create a username: </label>
-        <input type="text" id="username" /><div id="feedback"></div>
+var elNote = document.createElement('div');
+elNote.setAttribute('id','note');
+elNote.body.appendChild(elNote);
 
-        <label for="password">Create a password: </label>
-        <input type="password" id="password" />
+function dismissNote(){
+    document.body.removeChild(elNote);
+}
 
-        <input type="submit" value="sign up" />
-
-      </form>
-    </div>
-    <script src="js/click.js"></script>
-  </body>
-</html>
+var elClose = document.getElementById('close');
+elClose.addEventListener('click', dismissNote, false);

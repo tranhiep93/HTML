@@ -1,20 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>JavaScript &amp; jQuery - Chapter 6: Events - Event Delegation</title>
-    <link rel="stylesheet" href="css/c06.css" />
-  </head>
-  <body>
-    <div id="page">
-      <h1>List King</h1>
-      <h2>Buy groceries</h2>
-      <ul id="shoppingList">
-        <li class="complete"><a href="itemDone.php?id=1"><em>fresh</em> figs</a></li>
-        <li class="complete"><a href="itemDone.php?id=2">pine nuts</a></li>
-        <li class="complete"><a href="itemDone.php?id=3">honey</a></li>
-        <li class="complete"><a href="itemDone.php?id=4">balsamic vinegar</a></li>
-      </ul>
-    </div>
-    <script src="js/event-delegation.js"></script>
-  </body>
-</html>
+function getTarget(e){
+    if (!e){
+        e = window.event;
+    }
+    return e.target || e.srcElement;
+}
+function  itemDone(e){
+    var target, elParent, elGrandparent;
+    target = getTarget(e);
+    if (target.nodeName.toLowerCase() == "a"){
+        elListItem = target.parentNode;
+        elListItem = elListItem.parentNode;
+        elList.removeChild(elListItem);
+    }
+    if (target.nodeName.toLowerCase() == em){
+        elListItem = target.parentNode.parentNode;
+        elListItem = elListItem.parentNode;
+        elList.removeChild(elListItem);
+    }
+    if (e.preventDefault){
+        e.preventDefault();
+    } else {
+        e.returnValue = false;
+    }
+}
+
+var el = document.getElementById('shoppingList');
+if (el.addEventListener){
+    el.addEventListener('click', function (e){itemDone(e);},false);
+} else {
+    el.attachEvent('onclick', function (e){
+        itemDone(e);
+        }
+    );
+}

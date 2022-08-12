@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>JavaScript &amp; jQuery - Chapter 6: Events -  Focus and Blur</title>
-    <link rel="stylesheet" href="css/c06.css" />
-  </head>
-  <body>
-    <div id="page">
-      <h1>List King</h1>
-      <h2>New Account</h2>
-      <form method="post" action="http://www.example.org/register">
+function  checkUsername(){
+    var username = el.value;
+    if (username.length <5){
+        elMsg.className ='warning';
+        elMsg.textContent = 'Not long enough, yet...';
+    } else {
+        elMsg.textContent = '';
+    }
+}
+function  tipUsername(){
+    elMsg.className = 'tip';
+    elMsg.innerHTML = 'Username must be at least 5 characters';
+}
+var el = document.getElementById('username');
+var elMsg = document.getElementById('feedback');
 
-        <label for="username">Create a username: </label>
-        <input type="text" id="username" /><div id="feedback"></div>
-
-        <label for="password">Create a password: </label>
-        <input type="password" id="password" />
-
-        <input type="submit" value="sign up" />
-
-      </form>
-    </div>
-    <script src="js/focus-blur.js"></script>
-  </body>
-</html>
+el.addEventListener('focus', tipUsername, false);
+el.addEventListener('blur',checkUsername, false);

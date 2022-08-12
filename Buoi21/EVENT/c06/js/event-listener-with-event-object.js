@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>JavaScript &amp; jQuery - Chapter 6: Events - Event Listener and Event Object</title>
-    <link rel="stylesheet" href="css/c06.css" />
-  </head>
-  <body>
-    <div id="page">
-      <h1>List King</h1>
-      <h2>New Account</h2>
-      <form method="post" action="http://www.example.org/register">
-
-        <label for="username">Create a username: </label>
-        <input type="text" id="username" /><div id="feedback"></div>
-
-        <label for="password">Create a password: </label>
-        <input type="password" id="password" /><div id="feedback"></div>
-
-        <input type="submit" value="sign up" />
-
-      </form>
-    </div>
-    <script src="js/event-listener-with-event-object.js"></script>
-  </body>
-</html>
+function checkLength(e, minLength){
+    var el, elMsg;
+    if (!e){
+        e = window.event;
+    }
+    el = e.target || e.srcElement;
+    elMsg = el.nextSibling;
+    if (el.value.length <minLength) {
+        elMsg.innerHTML = 'Username must be' + minLength + 'characters or more';
+    } else {
+        elMsg.innerHTML = '';
+    }
+}
+var elUsername = document.getElementById('username');
+if (elUsername.addEventListener){
+    elUsername.addEventListener('blur', function (e){checkLength(e,5);},false);
+} else {
+    elUsername.attachEvent('onblur', function (e){
+        checkLength(e,5);
+    });
+}
