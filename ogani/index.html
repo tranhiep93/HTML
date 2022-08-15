@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGANI</title>
+    <link rel="stylesheet" href="./css/ogani.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link href='https://fonts.googleapis.com/css?family=Maiden Orange' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <div>
+        <div class="loader"></div>
+    </div>
+    <header>
+        <div class="grid wide">
+            <div class="row">
+                <div class="col xl-3 l-3 s-12">
+                    <div class="hd-logo">
+                        <h1><a href="#"><img src="./img/logo.png" alt=""></a></h1>
+                    </div>
+                </div>
+                <div class="col xl-6 l-6 s-0">
+                    <div class="hd-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col xl-3 l-3 s-0">
+                    <div class="hd-links">
+                        <button class="hd-links-like"><i class="fa-solid fa-heart"></i> <span>1</span></button>
+                        <button class="hd-links-cart"><i class="fa-solid fa-cart-shopping"></i> <span>2</span></button>
+                        <span class="hd-links-cart-coin">Coin : $150.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="grid wide">
+            <div class="category">
+                <div class="category-top">
+                    <div class="row">
+                        <div class="col xl-3 l-3 s-12">
+                            <div class="category-top__menu">
+                                <span><i class="fa-solid fa-bars"></i></span>
+                                <a href="#">All departments</a>
+                                <span><i class="fa-solid fa-angle-down"></i></span>
+                                <div class="category-top__menu-drop">
+                                    <ul class="">
+                                        <li><a href="#">Fresh Meat</a></li>
+                                        <li><a href="#">Vegetables</a></li>
+                                        <li><a href="#">Fruit & Nut Gift</a></li>
+                                        <li><a href="#">Fresh Berries</a></li>
+                                        <li><a href="#">Ocean Foods</a></li>
+                                        <li><a href="#">Butter & Eggs</a></li>
+                                        <li><a href="#">Fastfood</a></li>
+                                        <li><a href="#">Fresh Onion</a></li>
+                                        <li><a href="#">Papayaya & Crisps</a></li>
+                                        <li><a href="#">Oatmeal</a></li>
+                                        <li><a href="#">Fresh Bananas</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-6 l-6 s-12">
+                            <div class="category-top__search">
+                                <input type="text" placeholder="What do you need ?">
+                                <button>Search</button>
+                            </div>
+                        </div>
+                        <div class="col xl-3 l-3 s-12">
+                            <div class="category-top__phone">
+                                <span><i class="fa-solid fa-phone"></i></span>
+                                <p>+82 1234 1234
+                                    <span>Support 24/7 time</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-middle">
+                    <div class="row">
+                        <div class="col xl-3" style="z-index: -999999px;"></div>
+                        <div class="col xl-9">
+                            <div class="category-middle__img">
+                                <img src="./img/categories/banner.jpg" alt="">
+                            </div>
+                            <div class="category-middle__content">
+                                <h5>Fruit fresh</h5>
+                                <h2>Vegetable 100% Organic</h2>
+                                <p>Free Pickup and Delivery Available</p>
+                                <button>Shop now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-bottom">
+                    <span class="prev-btn"><i class="fa-solid fa-caret-left"></i></i></span>
+                    <span class="next-btn"><i class="fa-solid fa-caret-right"></i></i></span>
+                    <div class="row">
+                        <div class="col xl-3 l-3 s-0">
+                            <div class="category-bottom__item">
+                                <img src="./img/categories/cat-1.jpg" alt="">
+                                <h4>Drink Fruits</h4>
+                            </div>
+                        </div>
+                        <div class="col xl-3 l-3 s-0">
+                            <div class="category-bottom__item">
+                                <img src="./img/categories/cat-2.jpg" alt="">
+                                <h4>Vegetable</h4>
+                            </div>
+                        </div>
+                        <div class="col xl-3 l-3 s-0">
+                            <div class="category-bottom__item">
+                                <img src="./img/categories/cat-3.jpg" alt="">
+                                <h4>Dried Fruit</h4>
+                            </div>
+                        </div>
+                        <div class="col xl-3 l-3 s-0">
+                            <div class="category-bottom__item">
+                                <img src="./img/categories/cat-4.jpg" alt="">
+                                <h4>Drink Fruits</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <h2>Featured Product
+                    <span></span>
+                </h2>
+                <div class="product-menu">
+                    <div class="row">
+                        <div class="col xl-12 s-0">
+                            <ul class="flex">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Oranges</a></li>
+                                <li><a href="#">Fresh Meat</a></li>
+                                <li><a href="#">Vegetables</a></li>
+                                <li><a href="#">Fastfood</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-items">
+                    <div class="row">
+                        <div class="col xl-3 s-12">
+                            <div class="product-item">
+                                <img src="./img/product/product-1.jpg" alt="">
+                                <p class="product-item__name">Crab Pool Security</p>
+                                <p class="product-item__coin">$ 30.00</p>
+                                <div class="product-item__sub">
+                                    <button><i class="fa-solid fa-heart"></i></button>
+                                    <button><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-3 s-12">
+                            <div class="product-item">
+                                <img src="./img/product/product-1.jpg" alt="">
+                                <p class="product-item__name">Crab Pool Security</p>
+                                <p class="product-item__coin">$ 30.00</p>
+                                <div class="product-item__sub">
+                                    <button><i class="fa-solid fa-heart"></i></button>
+                                    <button><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-3 s-12">
+                            <div class="product-item">
+                                <img src="./img/product/product-2.jpg" alt="">
+                                <p class="product-item__name">Crab Pool Security</p>
+                                <p class="product-item__coin">$ 30.00</p>
+                                <div class="product-item__sub">
+                                    <button><i class="fa-solid fa-heart"></i></button>
+                                    <button><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-3 s-12">
+                            <div class="product-item">
+                                <img src="./img/product/product-3.jpg" alt="">
+                                <p class="product-item__name">Crab Pool Security</p>
+                                <p class="product-item__coin">$ 30.00</p>
+                                <div class="product-item__sub">
+                                    <button><i class="fa-solid fa-heart"></i></button>
+                                    <button><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-3 s-12">
+                            <div class="product-item">
+                                <img src="./img/product/product-5.jpg" alt="">
+                                <p class="product-item__name">Crab Pool Security</p>
+                                <p class="product-item__coin">$ 30.00</p>
+                                <div class="product-item__sub">
+                                    <button><i class="fa-solid fa-heart"></i></button>
+                                    <button><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-3 s-12">
+                            <div class="product-item">
+                                <img src="./img/product/product-6.jpg" alt="">
+                                <p class="product-item__name">Crab Pool Security</p>
+                                <p class="product-item__coin">$ 30.00</p>
+                                <div class="product-item__sub">
+                                    <button><i class="fa-solid fa-heart"></i></button>
+                                    <button><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-3 s-12">
+                            <div class="product-item">
+                                <img src="./img/product/product-7.jpg" alt="">
+                                <p class="product-item__name">Crab Pool Security</p>
+                                <p class="product-item__coin">$ 30.00</p>
+                                <div class="product-item__sub">
+                                    <button><i class="fa-solid fa-heart"></i></button>
+                                    <button><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-3 s-12">
+                            <div class="product-item">
+                                <img src="./img/product/product-9.jpg" alt="">
+                                <p class="product-item__name">Crab Pool Security</p>
+                                <p class="product-item__coin">$ 30.00</p>
+                                <div class="product-item__sub">
+                                    <button><i class="fa-solid fa-heart"></i></button>
+                                    <button><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="row">
+                    <div class="col xl-6 s-12">
+                        <div class="banner-img">
+                            <img src="./img/banner/banner-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col xl-6 s-12">
+                        <div class="banner-img">
+                            <img src="./img/banner/banner-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="row">
+                    <div class="col xl-4 s-12">
+                        <div class="slide-product">
+                            <h3><span><i class="fa-solid fa-chevron-left"></i></span>Latest Product <span><i class="fa-solid fa-chevron-right"></i></span></h3>
+                            <div class="slide-product-items">
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-1.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-2.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-3.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col xl-4 s-12">
+                        <div class="slide-product">
+                            <h3><span><i class="fa-solid fa-chevron-left"></i></span>Latest Product <span><i class="fa-solid fa-chevron-right"></i></span></h3>
+                            <div class="slide-product-items">
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-1.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-2.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-3.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col xl-4 s-12">
+                        <div class="slide-product">
+                            <h3><span><i class="fa-solid fa-chevron-left"></i></span>Latest Product <span><i class="fa-solid fa-chevron-right"></i></span></h3>
+                            <div class="slide-product-items">
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-1.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-2.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                                <div class="slide-product-item flex">
+                                    <img src="./img/latest-product/lp-3.jpg" alt="">
+                                    <div>
+                                        <p class="slide-product-item__name">Crab Pool Security</p>
+                                        <p class="slide-product-item__coin">$ 30.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <h2>From the Blog<span></span>
+                </h2>
+                <div class="row">
+                    <div class="col xl-4 s-12">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="./img/blog/blog-1.jpg" alt="">
+                            </div>
+                            <div class="blog-item-text">
+                                <p class="blog-item-text__time">May 4, 2019</p>
+                                <p class="blog-item-text__title">Cooking tips make cooking simple</p>
+                                <p class="blog-item-text__content">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col xl-4 s-12">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="./img/blog/blog-3.jpg" alt="">
+                            </div>
+                            <div class="blog-item-text">
+                                <p class="blog-item-text__time">May 4, 2019</p>
+                                <p class="blog-item-text__title">Cooking tips make cooking simple</p>
+                                <p class="blog-item-text__content">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col xl-4 s-12">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="./img/blog/blog-2.jpg" alt="">
+                            </div>
+                            <div class="blog-item-text">
+                                <p class="blog-item-text__time">May 4, 2019</p>
+                                <p class="blog-item-text__title">Cooking tips make cooking simple</p>
+                                <p class="blog-item-text__content">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="grid wide">
+            <div class="row">
+                <div class="col xl-4">
+                    <div class="info">
+                        <img src="./img/logo.png" alt="">
+                        <p class="info-address">Address: 60-69 Road 11378 New York</p>
+                        <p class="info-phone">+82 1234 1234</p>
+                        <p class="info-email">Email: hello@yahoo.com</p>
+                    </div>
+                </div>
+                <div class="col xl-4">
+                    <div class="footer-links">
+                        <h5>Useful Links</h5>
+                        <div class="row">
+                            <div class="col xl-6">
+                                <div class="footer-link-item">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">About Our Shop</a></li>
+                                        <li><a href="#">Secure Shopping</a></li>
+                                        <li><a href="#">Delivery information</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Our Sitemap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col xl-6">
+                                <div class="footer-link-item">
+                                    <ul>
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Our Service</a></li>
+                                        <li><a href="#">Projects</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Innovation</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xl-4">
+                    <div class="footer-contact">
+                        <h5>Join Our Newsletter Now</h5>
+                        <p>Get E-mail updates about our latest shop and spaecial offers</p>
+                        <form action="">
+                            <input type="emai" placeholder="Enter your mail">
+                            <button>Subscribe</button>
+                        </form>
+                        <div class="footer-contact__links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
