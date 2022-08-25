@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div>
+  <p>Name: <input type="text" id="name" class="helloworld" value="1"></p>
+  <button id="btnclick">click me</button>
+  <h1>Hello <div id="forname" class="helloworld"></div></h1>
+<div tag="div_content" 
+</div>
+
+<script>
+    //javascript
+    var name = document.getElementById("name").value;
+    document.getElementById("name").value = "dungpt";
+
+    //document.get
+    //jquery = data+event
+    // //val() lấy dữ liệu hoặc gán dữ liệu cho các thẻ form
+    var name2 = $("#name").val();
+    $("#name").val("dungpt");
+    console.log("name: "+ name);
+    console.log("name: "+ name2);
+    // //1. selector vùng chọn/ tập element html bị tác động.
+    // //selector cơ bản:
+    // //theo tên thẻ.
+    // //$("div") lấy tất cả các element  là thẻ div trong fiel html này
+    // //.html() lấy hoặc gán text hiển thị cho các thẻ hiển thị html
+    // $('button').html("lấy dữ liệu");
+    // //thuộc tính ID của thẻ theo thành phần html
+    $('#forname').html($("#name").val);
+    $('.forname').css("color:red");
+//sự kiện/ gia tri su kien bang hàm ( hàm có tên hoặc hàm không tên)
+$("#name").keypress();
+function pressName(){
+    $("#forname").html($('#name').val());
+}
+//ham vo danh
+$("#name").keypress(function(){
+    //than ham
+    $("#forname").html($('#name').val());
+});
+</script>
+
+
+
+</body>
+</html>

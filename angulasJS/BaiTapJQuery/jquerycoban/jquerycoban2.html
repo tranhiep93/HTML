@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery cơ bản</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+    <!--code html-->
+    <section class="container border">
+        <p class="text-primary py-5">
+            Jquery là thư viện JS giúp người dùng thao tác code js ngắn gọn và đa dạng hàm hơn.
+        </p>
+        <p class="text-info py-5">
+            Jquery sẽ sử dụng selector- vùng chọn tương tự css
+        </p>
+        <p id="p3" class="text-success py-5">
+            Ngoài ra Jquery giúp viết event trong js ngắn gọn hơn
+        </p>
+        <p mycontent="p4">
+            Ngoài ra Jquery giúp thao tác Ajax nhanh gọn
+        </p>
+        <input type="text" name="txtName" id="txtName" placeholder="Họ và tên" value="DungPT">
+        <div class="bg-danger" id="divName"></div>
+        <div class="row">
+            <div class="col-4">
+                <label>Giới tính:</label>
+            </div>
+            <div class="col-8">
+                <input type="radio" name="txtGioiTinh" id="txtGioiTinh_nu" value="0">NỮ
+                <input type="radio" name="txtGioiTinh" id="txtGioiTinh_nam" value="1">NAM
+                <input type="radio" name="txtGioiTinh" id="txtGioiTinh_khac" value="2">KHÁC
+            </div>
+        </div>
+        <button id="btnSave" class="btn-primary">Lưu thông tin</button>
+        
+    </section>
+    <!--code js customize-->
+    <script>
+        // code javascript/ js:
+        /*
+        var arrDiv = document.getElementsByTagName("div");
+        console.log("length: "+ arrDiv.length);
+        for(let i=0; i< arrDiv.length; i++){
+            let tdiv = arrDiv[i];
+            console.dir(tdiv);
+            tdiv.innerHTML = "Hoc jquery cơ bản";
+        }
+        for(let div of arrDiv){
+            div.innerHTML = "Hoc jquery cơ bản";
+        }
+        document.getElementById("btnSave").onclick = function(){alert("click")};
+        */
+        // code jquery
+        $("div#textdiv").html("Hoc jquery cơ bản"); // hàm html = thuộc tính innerHTML (js)
+        // $-> document
+        // ("<selector>") => để lấy 1 tập element hoặc 1 element dom trong page
+        /*
+        selector ( tương tự selector của Css)
+        #: id
+        .: class
+        <tên tag> : theo thẻ html
+        các ký hiệu thể  hiện mối quan hệ huyết thống trong dom như css: ~, + ...
+        */
+        // selector: tag, thẻ -> danh sách các element
+        $("p").html("Hàm html là hàm để gán hoặc lấy chuỗi html đang bao trong selector");
+        // selector: class -> danh sách các element
+        $("p.text-info").html("Selector là class của jquery");
+        // selector: id -> 1 element
+        $("#p3").html("Selector là id theo jquery");
+        // selector: thuộc tính và giá trị thuộc tính -> ds
+        $("[mycontent='p4']").html("<div class='text-warning text-bold'>Selector theo thuộc tính của thẻ</div>");
+        // lấy html của 1 phần tử nào đó
+        //alert($("[mycontent='p4']>div").html());
+
+        // gán giá trị value của các thẻ về form
+        $("#txtName").val("T2022");
+        // lấy giá trị value của thẻ form
+        let newText = $("#p3").html() + ": " +"<strong>" + $("#txtName").val() + "</strong>";
+        $("#p3").html(newText);
+        // thêm class fw-bold và fst-italic cho selector
+        $("p.text-info").addClass("fw-bold fst-italic");
+        // xóa class cho selector
+        $("[mycontent='p4']>div").removeClass("text-bold").addClass("fw-bold");
+        // thêm thuộc tính checked = "checked" vào cho 1 selector
+        $("input[value='0']").attr("checked","checked");
+        //alert("Ho va ten: "+ $("#txtName").attr("value"));
+        // indexElement: tham số đại diện cho chỉ mục của phần tử trong $("[name='txtGioiTinh']")
+        // element: tham số đại diện cho từng element mỗi lần duyệt
+        var gioiTinhValue;
+        $("[name='txtGioiTinh']").each(function(){
+            // this: trả về đối tượng hiện tại tại mỗi lần duyệt
+            console.log("Id: "+ $(this).attr("id") + "; value: "+ $(this).attr("value") 
+            + "; checked: "+ $(this).attr("checked"));
+
+            if ($(this).prop('checked')){
+                gioiTinhValue = $(this).val();
+            }
+        });
+        $("[name='txtGioiTinh']").each(function(indexElement, element){
+            if ($(element).prop('checked')){
+                gioiTinhValue = $(element).val();
+            }
+        });
+        console.log("Gioi tinh chon: "+ gioiTinhValue);
+        /*
+        Các hàm hay dùng trong jquery:
+        - html("< đoạn text html>") : = innerHTML, gán/ lây chuỗi text html vào cho selector lựa chọn
+        - val("<giá trị gán cho value>") = value (js), gán/ lấy value của các thẻ html -> form (input, select, textarea...)
+        - addClass("<tên class css>") : thêm 1 hoặc nhiều class css cho selector
+        - removeClass("<tên class css>"): remove/ xóa 1 hoặc nhiều class css cho selector
+        - attr("<tên thuộc tính>"): lấy giá trị của thuộc tính của selector đầu tiên
+        - attr("<tên thuộc tính>", "<giá trị của thuộc tính>"): gán giá trị cho thuộc tính của selector đầu tiên
+        - prop: lấy hoăc gán giá trị thuộc tính ( gần tương tự hàm attr)
+        - each: duyệt từng phần tử trong tập selector hợp lệ -> để lấy được từng phần tử là object
+        tham số của hàm each là 1 hàm định sẵn hoăc vô danh function(){}
+        - sự kiện: click, keyup ...
+        */
+        // tạo sự kiện click cho 1 button
+        $("#btnSave").click(saveTT);
+
+        function saveTT(){
+
+            alert("Họ và ten: "+ $("#txtName").val() + "; gioi tinh: "+ gioiTinhValue);
+        }
+        // thêm sự kiện keyup cho selector
+        $("#txtName").on("keyup", function(){
+            let name = $(this).val();
+            $("#divName").html(name);
+        });
+    </script>
+</body>
+</html>

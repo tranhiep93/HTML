@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angular bai 2 23.8.2022</title>
+    <script src="./angular.min.js"></script>
+
+</head>
+<body>
+<!-- ng-app="angularjscoban1"> chỉ thị của angular định danh đại diện cho 1 page.
+1 file html chỉ được khi báo 1 ng-app
+chu y: chưa định nghĩa tên, application thì nó sẽ không hiểu code -->
+<!-- nếu khai báo tên, thì khai báo trong js -->
+<!-- ng-app để sử dụng controller, modules,..., tạo ra các temple-sử dụng như các biến, để sử dụng nhiều lần -->
+<!-- ng-init khởi tạo các biến của angularjs sử dụng trong app
+vd: ng-init="num1 = 10 ; num2 = 20;"  khởi tạo 2 biến num1, num2 -->
+<!-- ng-controller khai báo thành phần điều khiển trong javascrip.
+xử lý sự kiện trong js, kênh giao tiếp dữ liệu từ biến trong js 
+tới view trong html -->
+<div class="container" ng-app="angularjscoban1" 
+ng-init="num1 = 10 ; num2 = 20;"
+ng-controller="angularjscoban1ctrl">
+<!-- hiển thị 2 biến, và tổng của chúng -->
+<!-- cả 2 là số sẽ là cộng, 1 trong 2 là chuỗi sẽ là nối chuỗi -->
+<!-- 2 biến này được dùng trong vùng khởi tạo, và js của angular -->
+{{num1}} + {{num2}} = {{num1 + num2}} <br/>
+<!-- ng-model thường dùng với thẻ form ( lấy giá trị input, select, textarea)-->
+<!-- hiển thị giá trị 1 biến {{tên biến}}, cách 2: ng-bind gia tri cua bien-->
+name: <input type="text" ng-model="name"> <br/>
+
+My name: <span ng-bind="name"></span><br/>
+===========
+<h3>chuong trinh tim uoc 1 so</h3>
+Nhập 1 số: <input type="number" ng-model="mynum">
+<button ng-click="timuoc()">Tìm ước</button>
+<h3>kết quả: </h3>
+<div ng-bind = "result" ></div>
+===========
+bài tập 3
+<h3>Form thêm mới</h3>
+
+<p>Họ và tên: <input type="text" ng-model="ten"></p>
+<p>Lớp học: 
+    <select>
+        <option>Lớp 1 tuổi</option>
+        <option>Lớp 2 tuổi</option>
+    </select>
+</p>
+<p>Điểm toán: <input type="number" min="0" max="10" ng-model="toan"><br/></p>
+<p>Điểm văn: <input type="number" min="0" max="10" ng-model="van"> <br/></p>
+<p>Điểm anh: <input type="number" min="0" max="10" ng-model="anh"></p>
+
+<button ng-click="themmoi()">Thêm mới</button>
+<button ng-click="lamtrang()">Làm trắng</button>
+
+
+</div>
+
+<!-- div chỉ hiển thị dạng class, hiển thị. nếu dùng trao đổi khai bao script -->
+<script>
+//khai báo biến đại diện angularjs document cho application
+// ngoặc vuông để chuyền các modele sau này.
+var myApp = angular.module("angularjscoban1", []);
+// khai báo 1 controller. giá trị của controller là 1 hàm.
+//vd mycontroller là tên 1 hàm tương ứng xử lý sự kiên cho controller angularjscoban1ctrl 
+myApp.controller("angularjscoban1ctrl", myController);
+// biến $scope  là biến cục bộ trong controller, để lấy dữ liệu giữa angular và controller
+
+function myController($scope){
+    //gán giá trị vào biến name
+    $scope.name="t225e";
+    $scope.result = "....";
+    //trao đổi biến view và controller
+    console.log("num1: "+$scope.num1+"; name: "+ $scope.name);
+// định nghĩa các sự kiện ng-click, ng-keypress...
+// giá trị 1 sự kiện là hàm. 
+$scope.timuoc = function(){
+    // điều kiện để bắt đầu tính toán
+    if(!isNaN($scope.mynum)){
+           // tạo mảng chứa các ước số mynum 
+    var arrayuoc = [];
+//them phần tử vào mảng
+arrayuoc.push(1);
+arrayuoc.push($scope.mynum);
+// duyệt từ 2 đến 1 nửa của mynum. let khai báo biến cục bộ
+for (let i=2; i <$scope.mynum/2; i++){
+    if($scope.mynum % i == 0){
+        arrayuoc.push(i);
+    }
+
+}
+//hiển thị
+console.log("ước: "+arrayuoc.join(","));
+//gán giá trị result bằng arrayuoc khi sự kiện xảy ra.
+    $scope.result = arrayuoc.join(",");
+
+    } else {
+        $scope.result = "";
+    }
+};
+
+
+
+}
+
+
+</script>
+
+</body>
+</html>

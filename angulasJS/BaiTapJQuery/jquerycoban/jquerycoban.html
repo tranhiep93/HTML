@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div>
+  <p>Name : <input type="text" id="name" class="helloworld" value ="1"></p>
+  <button id="btnClick">Click me</button>
+  <h1>Hello <div id="forname" class="helloworld"></div></h1>
+  <div tag="div_content" name="div_content" class="div_black"></div>
+</div>
+<script>
+    // javascript
+    var name = document.getElementById("name").value;// 1
+    document.getElementById("name").value = "dungpt";
+    //document.get
+    // jquery: data + event
+    // val(): lấy dữ liệu hoặc gán dữ liệu cho các thẻ form
+    var name2 = $('#name').val();// dungpt
+    $("#name").val("dungpt222");// $("#name").val() = dungpt222
+    console.log("name: "+ name + "; name2: "+ name2);
+    // 1. selector: vùng chọn/ tập element html bị tác động
+    // 1.1 selector cơ bản: 
+    // 1.1.1 theo tên thẻ/ tag
+    //VD: $("div"): lấy tất cả các element là thẻ div trong file html này
+    // html(): lấy hoặc gán text hiển thị cho các thẻ hiển thị html
+    $('button').html("Lấy dữ liệu");
+    // 1.1.2 theo thuộc tính id của thẻ/ thành phần html: #
+    $('#forname').html($('#name').val());
+    // 1.1.3 theo class của thẻ/ thành phần html: .
+    // css(): thêm / lấy giá trị thuộc tính css cho thẻ html
+    $('input.helloworld').css("color","red");
+    // 1.1.4: theo thuộc tính ( kèm giá trị) của thẻ/ thành phần html: []
+    //$('[class="helloworld"]'): tìm các thẻ class = "helloworld"
+    $('div[class="helloworld"]').css("background-color","green");
+    $('div>p').css("font-weight","bold");
+    // sự kiện/ event = hàm
+    //$("#name").keypress(pressName);
+    $("#name").keypress(function(){
+        // thân hàm vô danh
+        $('#forname').html($('#name').val());
+    });
+    function pressName(){
+        $('#forname').html($('#name').val());
+    }
+</script>
+</body>
+</html> 
