@@ -37,24 +37,22 @@
                     <button class="btn btn-primary" ng-click="showProd(item)">Xem chi tiet</button>
                 </div>
             </div>
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    
-                    <div class="modal-body">
-                        <div class="col-md-4 col-sm-12 border rounded py-3" ng-repeat="item in products">
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content py-5">
+                      <h3 class="text-center">Thông tin chi tiết sản phẩm</h3>
+                      <div class="row">
+                        <div class="col-6">
                             <div class="image-div">
-                                <img src="{{item.anh}}" alt="{{item.tensp">
+                                <img src="{{item.anh}}" alt="{{item.tensp}}">
                             </div>
-                            <!-- my-2 dãn theo chiều đứng, trục Y -->
-                            <div class="info my-2" style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <div class="info my-5" style="display: flex; flex-direction: row;justify-content: space-between;">
                                 <span class="name-clother" ng-bind="item.tensp"></span>
                                 <span class="price-clother">{{item.gia + '$'}}</span>
                             </div>
-                            <div class="btn-div">
-                                <!--ng-click="showProd(item)" tên một biến item trong hàm showProd  -->
-                                <button class="btn btn-primary" ng-click="showProd(item)">Xem chi tiet</button>
-                            </div>
+                        </div>
+                        <div class="col-6">
+                            {{item.mota}}
                         </div>
                     </div>
                   </div>
